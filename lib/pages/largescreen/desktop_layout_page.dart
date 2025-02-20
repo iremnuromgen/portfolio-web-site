@@ -79,7 +79,8 @@ class _DesktopLayoutState extends State<DesktopLayout>
       }
     }
 
-    return Scaffold(
+  return Scaffold(
+      backgroundColor: Colors.transparent,
       body: Stack(
         children: [
           Container(color: AppColors.backgroundPrimary),
