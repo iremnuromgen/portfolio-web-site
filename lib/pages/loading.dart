@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:portfolio_site/pages/home.dart';
 import 'package:portfolio_site/pages/largescreen/desktop_layout_page.dart';// HomePage dosyanı import etmeyi unutma
 
 class LoadingPage extends StatefulWidget {
@@ -15,7 +16,7 @@ class _LoadingPageState extends State<LoadingPage> {
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const DesktopLayout()),
+        MaterialPageRoute(builder: (context) => const HomeView()),
       );
     });
   }
