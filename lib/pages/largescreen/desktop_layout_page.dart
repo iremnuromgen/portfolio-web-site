@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_site/constants/colors.dart';
-import 'package:portfolio_site/animations/particle_animation.dart';
-import 'package:portfolio_site/pages/largescreen/sections/about_section.dart';
+import 'package:portfolio_site/animations/particle_animation.dart'; // YENİ widget eklendi
 import 'package:portfolio_site/pages/largescreen/sections/contact_section.dart';
 import 'package:portfolio_site/pages/largescreen/sections/footer_section.dart';
 import 'package:portfolio_site/pages/largescreen/sections/home_section.dart';
-import 'package:portfolio_site/widgets/navbar.dart';
+import 'package:portfolio_site/pages/largescreen/sections/about_section.dart';
 import 'package:portfolio_site/pages/largescreen/sections/projects_section.dart';
 import 'package:portfolio_site/pages/largescreen/sections/skills_section.dart';
-import 'package:portfolio_site/widgets/sidebar.dart';
+import 'package:portfolio_site/widgets/desktop-widgets/navbar.dart';
+import 'package:portfolio_site/widgets/desktop-widgets/sidebar.dart';
 
 class DesktopLayout extends StatefulWidget {
   const DesktopLayout({super.key});
@@ -17,107 +16,78 @@ class DesktopLayout extends StatefulWidget {
   State<DesktopLayout> createState() => _DesktopLayoutState();
 }
 
-class _DesktopLayoutState extends State<DesktopLayout>
-    with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-  final List<Particle> _particles = [];
+class _DesktopLayoutState extends State<DesktopLayout> {
   final ScrollController _scrollController = ScrollController();
-  int selectedIndex = 0; // Seçili bölümü takip etmek için
+  int _selectedIndex = 0;
+
+  void _onScroll() {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final offset = _scrollController.offset;
+    int newIndex = 0;
+
+    if (offset >= screenHeight * 3.5) {
+      newIndex = 4;
+    } else if (offset >= screenHeight * 2.5) {
+      newIndex = 3;
+    } else if (offset >= screenHeight * 1.75) {
+      newIndex = 2;
+    } else if (offset >= screenHeight) {
+      newIndex = 1;
+    }
+
+    if (newIndex != _selectedIndex) {
+      setState(() {
+        _selectedIndex = newIndex;
+      });
+    }
+  }
 
   @override
   void initState() {
     super.initState();
-    _scrollController.addListener(_updateSelectedIndex);
-
-    _controller = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 100),
-    )..addListener(() {
-        setState(() {
-          _particles.forEach((particle) => particle.update(MediaQuery.of(context).size));
-        });
-      });
-    _controller.repeat();
+    _scrollController.addListener(_onScroll);
   }
 
-  void _updateSelectedIndex() {
-    if (!mounted) return; // Widget ağacından kaldırıldıysa işlemi durdur
-
-    double offset = _scrollController.offset;
-    final double screenHeight = MediaQuery.of(context).size.height;
-
-    int newIndex = selectedIndex;
-    final List<double> sectionOffsets = [
-      0,
-      screenHeight,
-      screenHeight * 1.75,
-      screenHeight * 2.50,
-      screenHeight * 3.50
-    ];
-
-    for (int i = 0; i < sectionOffsets.length; i++) {
-      if (offset >= sectionOffsets[i] - 50 && offset < sectionOffsets[i] + 50) {
-        newIndex = i;
-        break;
-      }
-    }
-
-    if (newIndex != selectedIndex) {
-      setState(() {
-        selectedIndex = newIndex;
-      });
-    }
+  @override
+  void dispose() {
+    _scrollController.removeListener(_onScroll);
+    _scrollController.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
 
-    if (_particles.isEmpty) {
-      for (int i = 0; i < 130; i++) {
-        _particles.add(Particle(screenSize));
-      }
-    }
-
-  return Scaffold(
-      backgroundColor: Colors.transparent,
+    return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 0, 0, 0),
       body: Stack(
         children: [
-          Container(color: AppColors.backgroundPrimary),
-          CustomPaint(
-            size: Size(screenSize.width, screenSize.height),
-            painter: ParticlePainter(_particles),
-          ),
+          const Positioned.fill(child: ParticleAnimation()),
+
+          //Sayfa içeriği
           SingleChildScrollView(
             controller: _scrollController,
             child: Column(
               children: [
                 SizedBox(height: screenSize.height, child: const HomeSection()),
                 SizedBox(height: screenSize.height, child: const AboutSection()),
-                SizedBox(height: screenSize.height/2, child: const SkillsSection()),
+                SizedBox(height: screenSize.height / 2, child: const SkillsSection()),
                 SizedBox(height: screenSize.height, child: const ProjectsSection()),
                 SizedBox(height: screenSize.height, child: const ContactSection()),
-                const Footer()
+                Container(
+                  color: Colors.black,
+                  child: const Footer(),
+                ),
               ],
             ),
           ),
+
+          //Navbar ve Sidebar
           const Positioned(top: 0, left: 0, right: 0, child: NavBar()),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: SideBar(
-              scrollController: _scrollController,
-              selectedIndex: selectedIndex,
-            ),
-          ),
+          SideBar(scrollController: _scrollController, selectedIndex: _selectedIndex),
         ],
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    _scrollController.dispose();
-    super.dispose();
   }
 }

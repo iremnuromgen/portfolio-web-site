@@ -25,7 +25,7 @@ class _LandingViewState extends State<LandingView> {
     {'text': ':', 'color': AppColors.orchidDust},
     {'text': ' Text', 'color': AppColors.fushiaBlush},
     {'text': '(', 'color': AppColors.nude},
-    {'text': '\'Welcome To My Portfolio Site!\'', 'color': AppColors.oatMilk},
+    {'text': '\'Welcome To My Portfolio!\'', 'color': AppColors.oatMilk},
     {'text': ')', 'color': AppColors.nude},
   ];
 
@@ -61,7 +61,7 @@ class _LandingViewState extends State<LandingView> {
               text: currentText,
               style: TextStyle(
                   color: codeSnippets[_snippetIndex]['color'],
-                  fontSize: 18,
+                  fontSize: _getTextSize(context), // Ekran boyutuna göre yazı boyutu
                   fontFamily: 'FiraCode'),
             ));
             _displayText = ""; //* geçici olarak gösterilen metin sıfırlanır
@@ -79,6 +79,18 @@ class _LandingViewState extends State<LandingView> {
     });
   }
 
+  // Ekran boyutuna göre yazı boyutunu belirleyen fonksiyon
+  double _getTextSize(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    if (screenWidth > 950) {
+      return 18;
+    } else if (screenWidth >= 600 && screenWidth <= 950) {
+      return 15;
+    } else {
+      return 14;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,7 +104,7 @@ class _LandingViewState extends State<LandingView> {
                 text: _displayText,
                 style: TextStyle(
                   color: _snippetIndex < codeSnippets.length ? codeSnippets[_snippetIndex]['color'] : Colors.white,
-                  fontSize: 18,
+                  fontSize: _getTextSize(context), // Ekran boyutuna göre yazı boyutu
                   fontFamily: 'FiraCode'
                 )
               )

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_site/widgets/gradient_text.dart';
-import 'package:portfolio_site/widgets/category_box.dart';
+import 'package:portfolio_site/widgets/desktop-widgets/category_box.dart';
 import 'package:portfolio_site/constants/skills_data.dart';
 import 'package:portfolio_site/constants/colors.dart';
 

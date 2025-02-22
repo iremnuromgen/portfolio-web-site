@@ -5,7 +5,7 @@ import 'package:portfolio_site/services/social_media_service.dart';
 
 
 class HomeSection extends StatelessWidget {
-  const HomeSection({super.key});
+  const HomeSection({super.key}); 
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class HomeSection extends StatelessWidget {
             alignment: Alignment.center,
             children: [
               Text(
-                'Jr. Flutter Developer',
+                'Jr. Mobile Developer',
                 style: TextStyle(
                   fontSize: 50,
                   fontFamily: 'FiraCode',
@@ -57,7 +57,7 @@ class HomeSection extends StatelessWidget {
                 ),
               ),
               const Text(
-                'Jr. Flutter Developer',
+                'Jr. Mobile Developer',
                 style: TextStyle(
                   fontSize: 50,
                   fontFamily: 'FiraCode',
@@ -66,7 +66,7 @@ class HomeSection extends StatelessWidget {
                 ),
               ),
               Text(
-                'Jr. Flutter Developer',
+                'Jr. Mobile Developer',
                 style: TextStyle(
                   fontSize: 50,
                   fontFamily: 'FiraCode',

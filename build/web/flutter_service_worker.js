@@ -248,13 +248,13 @@ const RESOURCES = {".git/COMMIT_EDITMSG": "08c0747f690382390e5a150725bc0e6d",
 "canvaskit/skwasm.worker.js": "89990e8c92bcb123999aa81f7e203b1c",
 "favicon.ico": "72223b06c708cbdecab9a0904d1ad3fb",
 "flutter.js": "f393d3c16b631f36852323de8e583132",
-"flutter_bootstrap.js": "d165aaaf201cc6d153c06a580c165fc4",
+"flutter_bootstrap.js": "bdc3cffa59c4a51dc763905936fc8e35",
 "icons/apple-touch-icon.png": "0284384156cac7fe6a3f72bc3106cf8f",
 "icons/icon-192.png": "7c427c54919b9a2a35c1aea91713f864",
 "icons/icon-512.png": "46dcf399499aa95b784705ee73da5ebb",
 "index.html": "82913da9b27c8b7fd7f1edbd7d8db106",
 "/": "82913da9b27c8b7fd7f1edbd7d8db106",
-"main.dart.js": "2dd47c0085d7dd40e1eace61b8541fd7",
+"main.dart.js": "fc575a75d85f24ba94f0608a75756450",
 "version.json": "3d580c8884ce2e572a5ba7fd382bd4a3"};
 // The application shell files that are downloaded before a service worker can
 // start.

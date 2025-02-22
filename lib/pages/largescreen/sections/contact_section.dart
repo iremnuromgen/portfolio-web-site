@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_site/constants/colors.dart';
-import 'package:portfolio_site/widgets/custom_text_field.dart';
+import 'package:portfolio_site/widgets/desktop-widgets/custom_text_field.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_site/widgets/gradient_text.dart';
 import 'package:portfolio_site/services/mail_service.dart'; // MailService'i import et
