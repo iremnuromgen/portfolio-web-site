@@ -20,5 +20,5 @@ List<Project> projects = [
     title: "Portfolio",
     description: "Mobil ve web geliştirme alanındaki projelerimi sergilediğim, yeteneklerimi ve deneyimlerimi yansıtan kişisel portfolyo web sitesi.",
     image: "assets/images/portfolio.png",
-  ),
+  )
 ];

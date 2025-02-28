@@ -99,26 +99,26 @@ class _ProjectsSectionState extends State<ProjectsSection> {
                                     ),
                                   ),
                                   const SizedBox(height: 40),
-                                  ElevatedButton(
-                                    onPressed: () {},
-                                    style: ElevatedButton.styleFrom(
-                                      backgroundColor: const Color.fromARGB(173, 116, 28, 40),
-                                      foregroundColor: AppColors.oatMilk,
-                                      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(12),
-                                        side: const BorderSide(color: Color.fromARGB(173, 243, 224, 209)),
-                                      ),
-                                    ),
-                                    child: const Text(
-                                      "Review",
-                                      style: TextStyle(
-                                        fontFamily: 'FiraCode',
-                                        color: AppColors.oatMilk,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                  ),
+                                  // ElevatedButton(
+                                  //   onPressed: () {},
+                                  //   style: ElevatedButton.styleFrom(
+                                  //     backgroundColor: const Color.fromARGB(173, 116, 28, 40),
+                                  //     foregroundColor: AppColors.oatMilk,
+                                  //     padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                                  //     shape: RoundedRectangleBorder(
+                                  //       borderRadius: BorderRadius.circular(12),
+                                  //       side: const BorderSide(color: Color.fromARGB(173, 243, 224, 209)),
+                                  //     ),
+                                  //   ),
+                                  //   child: const Text(
+                                  //     "Review",
+                                  //     style: TextStyle(
+                                  //       fontFamily: 'FiraCode',
+                                  //       color: AppColors.oatMilk,
+                                  //       fontWeight: FontWeight.bold,
+                                  //     ),
+                                  //   ),
+                                  // ),
                                 ],
                               ),
                             ),
