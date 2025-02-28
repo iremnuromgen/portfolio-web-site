@@ -13,17 +13,12 @@ class Project {
 List<Project> projects = [
   Project(
     title: "Ternai",
-    description: "Seyahat planlamanızı yapabileceğiniz akıllı bir mobil uygulama.",
-    image: "assets/images/app_image1.jpg",
-  ),
-  Project(
-    title: "E-Ticaret",
-    description: "Kullanıcı dostu arayüzüyle modern bir e-ticaret platformu.",
-    image: "assets/images/app_image2.jpg",
+    description: "Ternai, bütçenize ve tatil planınıza en uygun seyahat seçeneklerini sunan akıllı bir mobil uygulamadır.Konaklama süresine, bütçeye ve tercihlere göre önerilerde bulunarak kullanıcıların en verimli şekilde seyahat planlaması yapmasına yardımcı olur.",
+    image: "assets/images/ternai.png",
   ),
   Project(
     title: "Portfolio",
-    description: "Kendi kişisel projelerimi sergilediğim portfolyo web sitesi.",
-    image: "assets/images/app_image3.jpg",
+    description: "Mobil ve web geliştirme alanındaki projelerimi sergilediğim, yeteneklerimi ve deneyimlerimi yansıtan kişisel portfolyo web sitesi.",
+    image: "assets/images/portfolio.png",
   ),
 ];
