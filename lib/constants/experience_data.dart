@@ -20,4 +20,16 @@ const List<Map<String, dynamic>> experienceDetails = [
       'I applied testing and debugging techniques to enhance the mobile application development process.',
     ],
   },
+  {
+    'title': 'Freelancer Flutter Developer',
+    'company': 'Whomii',
+    'date': 'March 10 2025 - March 28 2025',
+    'tasks': [
+      'Worked on three different mini projects, completing missing pages and improving user experience.',
+      'Conducted code reviews, debugged issues, and fixed existing errors.',
+      'Optimized responsive design to ensure compatibility across all devices and screen sizes.',
+      'Performed emulator testing to verify functionality across different devices and scenarios.',
+      'Managed the build process and prepared the projects for deployment to a live environment.'
+    ],
+  },
 ];
