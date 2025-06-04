@@ -1,0 +1,30 @@
+com.example.portfolio_site.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-0 C:\Users\omgen\.gradle\caches\transforms-3\0b0f4e1b60825cdbc5bf41aa716dc813\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+com.example.portfolio_site.app-lifecycle-viewmodel-2.7.0-1 C:\Users\omgen\.gradle\caches\transforms-3\0f012c57353574f4e5b2c3d583810db8\transformed\lifecycle-viewmodel-2.7.0\res
+com.example.portfolio_site.app-fragment-1.7.1-2 C:\Users\omgen\.gradle\caches\transforms-3\146c9df7d55c2d814b25598f65b64a69\transformed\fragment-1.7.1\res
+com.example.portfolio_site.app-jetified-tracing-1.2.0-3 C:\Users\omgen\.gradle\caches\transforms-3\1e245ac89f1622c3a488d9988f504698\transformed\jetified-tracing-1.2.0\res
+com.example.portfolio_site.app-lifecycle-livedata-2.7.0-4 C:\Users\omgen\.gradle\caches\transforms-3\22dde9e505310dcb6f61ccca0372180e\transformed\lifecycle-livedata-2.7.0\res
+com.example.portfolio_site.app-jetified-lifecycle-process-2.7.0-5 C:\Users\omgen\.gradle\caches\transforms-3\32514224afabe11e1e676bc8c933db7b\transformed\jetified-lifecycle-process-2.7.0\res
+com.example.portfolio_site.app-jetified-profileinstaller-1.3.1-6 C:\Users\omgen\.gradle\caches\transforms-3\3fef18a1d33e6bad9b6bcec72cf1c610\transformed\jetified-profileinstaller-1.3.1\res
+com.example.portfolio_site.app-jetified-window-java-1.2.0-7 C:\Users\omgen\.gradle\caches\transforms-3\542fbd4e7c4908d07475a32754830c1e\transformed\jetified-window-java-1.2.0\res
+com.example.portfolio_site.app-jetified-annotation-experimental-1.4.0-8 C:\Users\omgen\.gradle\caches\transforms-3\632ac96b858cb1ae48d6744dd1eaade3\transformed\jetified-annotation-experimental-1.4.0\res
+com.example.portfolio_site.app-lifecycle-livedata-core-2.7.0-9 C:\Users\omgen\.gradle\caches\transforms-3\696f1b3114a4591667c57c9cde836ba2\transformed\lifecycle-livedata-core-2.7.0\res
+com.example.portfolio_site.app-jetified-activity-1.8.1-10 C:\Users\omgen\.gradle\caches\transforms-3\6f8a269f914ff00721956a15afea0946\transformed\jetified-activity-1.8.1\res
+com.example.portfolio_site.app-core-runtime-2.2.0-11 C:\Users\omgen\.gradle\caches\transforms-3\76067492881b18b077e4eb144330ecfe\transformed\core-runtime-2.2.0\res
+com.example.portfolio_site.app-jetified-core-1.0.0-12 C:\Users\omgen\.gradle\caches\transforms-3\7873047bb2e5d972e265d55d84438901\transformed\jetified-core-1.0.0\res
+com.example.portfolio_site.app-browser-1.8.0-13 C:\Users\omgen\.gradle\caches\transforms-3\87c9a654848abd0b8fb4eebab6d7f029\transformed\browser-1.8.0\res
+com.example.portfolio_site.app-jetified-savedstate-1.2.1-14 C:\Users\omgen\.gradle\caches\transforms-3\92b5d2dc99becaaadf3e7430f835cc24\transformed\jetified-savedstate-1.2.1\res
+com.example.portfolio_site.app-jetified-core-ktx-1.13.1-15 C:\Users\omgen\.gradle\caches\transforms-3\931e1fbd64626834ece45a843fff698e\transformed\jetified-core-ktx-1.13.1\res
+com.example.portfolio_site.app-jetified-startup-runtime-1.1.1-16 C:\Users\omgen\.gradle\caches\transforms-3\ac2fc430907414d6888c8a7be9883684\transformed\jetified-startup-runtime-1.1.1\res
+com.example.portfolio_site.app-lifecycle-runtime-2.7.0-17 C:\Users\omgen\.gradle\caches\transforms-3\d3af37761384468984beb30843202962\transformed\lifecycle-runtime-2.7.0\res
+com.example.portfolio_site.app-core-1.13.1-18 C:\Users\omgen\.gradle\caches\transforms-3\dfa32f32b4b52ef4d130b014e5fbb01e\transformed\core-1.13.1\res
+com.example.portfolio_site.app-jetified-window-1.2.0-19 C:\Users\omgen\.gradle\caches\transforms-3\ef8a7474a2c026c628b9838c3a424a72\transformed\jetified-window-1.2.0\res
+com.example.portfolio_site.app-jetified-lifecycle-livedata-core-ktx-2.7.0-20 C:\Users\omgen\.gradle\caches\transforms-3\fa0b525f6d0730af98e92fe0dfeda164\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
+com.example.portfolio_site.app-debug-21 C:\Users\omgen\OneDrive\Belgeler\Visual Studio Code\Projects\portfolio-web-site\android\app\src\debug\res
+com.example.portfolio_site.app-main-22 C:\Users\omgen\OneDrive\Belgeler\Visual Studio Code\Projects\portfolio-web-site\android\app\src\main\res
+com.example.portfolio_site.app-pngs-23 C:\Users\omgen\OneDrive\Belgeler\Visual Studio Code\Projects\portfolio-web-site\build\app\generated\res\pngs\debug
+com.example.portfolio_site.app-resValues-24 C:\Users\omgen\OneDrive\Belgeler\Visual Studio Code\Projects\portfolio-web-site\build\app\generated\res\resValues\debug
+com.example.portfolio_site.app-packageDebugResources-25 C:\Users\omgen\OneDrive\Belgeler\Visual Studio Code\Projects\portfolio-web-site\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.portfolio_site.app-packageDebugResources-26 C:\Users\omgen\OneDrive\Belgeler\Visual Studio Code\Projects\portfolio-web-site\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.portfolio_site.app-merged_res-27 C:\Users\omgen\OneDrive\Belgeler\Visual Studio Code\Projects\portfolio-web-site\build\app\intermediates\merged_res\debug
+com.example.portfolio_site.app-packaged_res-28 C:\Users\omgen\OneDrive\Belgeler\Visual Studio Code\Projects\portfolio-web-site\build\path_provider_android\intermediates\packaged_res\debug
+com.example.portfolio_site.app-packaged_res-29 C:\Users\omgen\OneDrive\Belgeler\Visual Studio Code\Projects\portfolio-web-site\build\url_launcher_android\intermediates\packaged_res\debug
